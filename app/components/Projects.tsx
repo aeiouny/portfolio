@@ -13,6 +13,12 @@ const projects = [
         description: '',
         techStack: [],
         githubUrl: '',
+    },
+    {
+        title: '',
+        description: '',
+        techStack: [],
+        githubUrl: '',
     }
     
 ];
@@ -20,7 +26,15 @@ const projects = [
 export default function Projects() {
     return (
         <section>
-            <h2>Featured Projects</h2>
+            <div>
+                <h2>Featured Projects</h2>
+            </div>
+
+            <div>
+                {projects.map((project) => (
+                    <ProjectCard key={project.title} {...project} />
+                ))}
+            </div>
         </section>
     )
 }

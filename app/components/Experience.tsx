@@ -44,7 +44,7 @@ const experiences: ExperienceItem[] = [
 
 export default function Experience() {
     return (
-        <section>
+        <section id="experience" className="py-20">
             <h2>Experience</h2>
             <div>
                 {experiences.map((exp, index) => (

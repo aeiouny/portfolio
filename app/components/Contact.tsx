@@ -2,7 +2,7 @@
 
 export default function Contact() {
     return (
-        <section>
+        <section id="contact" className="py-80">
             <h2>Get In Touch</h2>
             <p>
                 Currently looking for new opportunities. Feel free to reach out, or

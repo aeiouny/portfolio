@@ -25,7 +25,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section>
+        <section id="projects" className="py-20">
             <div>
                 <h2>Featured Projects</h2>
             </div>

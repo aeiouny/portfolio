@@ -59,33 +59,38 @@ const skillData: SkillCategory[] = [
 ]
 
 export default function Skills() {
-    return (
-        <section>
-            <div>
-                <h2 className="text-red-400">Technologies Learned</h2>
-            </div>
-            
-            <div>
-                {skillData.map((group) => (
-                    <div key={group.category}>
-                        {/* Left Side */}
-                        <div>
-                            <h3>{group.category}</h3>
-                        </div>
+  return (
+    <section id="skills" className="space-y-6 pt-6">
+      <h2 className="font-mono text-xs font-semibold tracking-wider uppercase text-emerald-400">
+        // Technical Skills
+      </h2>
 
-                        {/* Right Side */}
-                        <div>
-                            {group.items.map((skill) => (
-                                <div key={skill.name}>
-                                    <span>{skill.icon}</span>
-                                    <span>{skill.name}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                ))}
+      <div className="space-y-4">
+        {skillData.map((group) => (
+          <div
+            key={group.category}
+            className="rounded-2xl border border-slate-800/80 bg-slate-900/40 p-5 transition-all hover:border-slate-700/80 flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6"
+          >
+            <div className="sm:w-32 flex-shrink-0">
+              <h3 className="font-mono text-xs font-semibold uppercase tracking-wider text-slate-400 sm:pt-1.5">
+                {group.category}
+              </h3>
             </div>
 
-        </section>
-    )
+            <div className="flex flex-wrap gap-2 flex-grow">
+              {group.items.map((skill) => (
+                <div
+                  key={skill.name}
+                  className="flex items-center gap-2 rounded-xl border border-slate-800 bg-slate-950/70 px-3 py-1.5 text-xs text-slate-300 transition-colors hover:border-slate-700 hover:text-white"
+                >
+                  <span className="flex-shrink-0">{skill.icon}</span>
+                  <span className="font-mono text-[11px] font-medium">{skill.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }

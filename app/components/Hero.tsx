@@ -1,67 +1,59 @@
-import React from "react";
-
 export default function Hero() {
   return (
     <section id="about" className="pt-16 pb-12 text-center space-y-6">
       
-      <div className="flex flex-col items-center gap-3">
-        <div className="relative">
-          <div className="h-24 w-24 rounded-full overflow-hidden border-2 border-slate-800 bg-slate-900 shadow-md">
-            <img
-              src="/profile.jpg"
-              alt="Johnny Nguyen"
-              className="h-full w-full object-cover"
-            />
-          </div>
-
-          <span className="absolute bottom-1 right-1 flex h-4 w-4">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-4 w-4 bg-emerald-500 border-2 border-slate-950" />
-          </span>
-        </div>
-
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-emerald-400 text-xs font-mono">
-          <span className="h-2 w-2 rounded-full bg-emerald-400" />
-          Available for Work
-        </div>
-      </div>
-
-      <div className="space-y-1">
-        <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-white">
+      <div className="space-y-3">
+        <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white">
           Johnny Nguyen
         </h1>
-        <p className="text-base sm:text-lg font-medium text-slate-400">
-          Aspiring Software Engineer & CS Student
+        
+        <p className="text-base sm:text-lg font-mono font-medium text-emerald-400">
+          Software Engineer - Backend & Cloud Systems
         </p>
+        
+        <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-l text-xs sm:text-sm text-slate-400 font-mono">
+          <span>M.S. Software Engineering @ SJSU</span>
+          <span className="hidden sm:inline text-slate-700">•</span>
+          <span>SAN FRANCISCO BAY AREA (Open to Remote / Relocation)</span>
+        </div>
       </div>
 
-        <p className="text-center text-sm sm:text-base text-slate-400 leading-relaxed max-w-lg mx-auto w-full">
-        Interested in web development, building accessible user interfaces, and solving real-world problems in collaborative engineering environments.
-        </p>
+      <p className="text-center text-sm sm:text-base text-slate-300 leading-relaxed max-w-xl mx-auto w-full px-4">
+        Currently building distributed backend services, containerized infrastructure, and high-performance microservices using 
+        <span className="text-white font-medium"> TypeScript</span>, <span className="text-white font-medium">PostgreSQL</span>, and <span className="text-white font-medium">Kubernetes</span>.
+      </p>
 
         <div className="w-full flex flex-wrap justify-center items-center gap-3 pt-2 font-mono text-xs">
-        <a
-            href="https://github.com/aeiouny"
-            target="_blank"
-            rel="noreferrer"
-            className="px-4 py-2 rounded-lg border border-slate-700 bg-slate-900 text-slate-200 hover:border-emerald-400/50 hover:text-emerald-400 transition-colors"
-        >
-            GitHub ↗
-        </a>
-        <a
-            href="https://linkedin.com/in/johnnyxn"
-            target="_blank"
-            rel="noreferrer"
-            className="px-4 py-2 rounded-lg border border-slate-700 bg-slate-900 text-slate-200 hover:border-emerald-400/50 hover:text-emerald-400 transition-colors"
-        >
-            LinkedIn ↗
-        </a>
-        <a
-            href="mailto:johnnyxn@outlook.com"
-            className="px-4 py-2 rounded-lg border border-transparent text-slate-400 hover:text-white transition-colors"
-        >
-            Get in Touch
-        </a>
+          <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="px-5 py-2.5 rounded-lg bg-emerald-500 text-slate-950 font-semibold hover:bg-emerald-400 transition-all shadow-md shadow-emerald-500/10 active:scale-95"
+          >
+              Resume ↗
+          </a>
+          <a
+              href="https://github.com/aeiouny"
+              target="_blank"
+              rel="noreferrer"
+              className="px-4 py-2.5 rounded-lg border border-slate-800 bg-slate-900/80 text-slate-300 hover:border-slate-700 hover:text-white hover:bg-slate-900 transition-all active:scale-95"
+          >
+              GitHub ↗
+          </a>
+          <a
+              href="https://linkedin.com/in/johnnyxn"
+              target="_blank"
+              rel="noreferrer"
+              className="px-4 py-2.5 rounded-lg border border-slate-800 bg-slate-900/80 text-slate-300 hover:border-slate-700 hover:text-white hover:bg-slate-900 transition-all active:scale-95"
+          >
+              LinkedIn ↗
+          </a>
+          <a
+              href="mailto:johnnyxn@outlook.com"
+              className="px-4 py-2.5 rounded-lg border border-transparent text-slate-400 hover:text-slate-200 transition-colors"
+          >
+              Get in Touch
+          </a>
         </div>
     </section>
   );

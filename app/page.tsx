@@ -11,10 +11,12 @@ export default function Home() {
     <div>
       <Navbar/>
       <Hero/>
-      <Skills/>
-      <Experience/>
-      <Projects/>
-      {/* <Contact/> */}
+      <div className="max-w-7xl mx-auto px-4">
+        <Skills/>
+        <Experience/>
+        <Projects/>
+        {/* <Contact/> */}
+      </div>
       <Footer/>
     </div>
   );

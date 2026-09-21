@@ -19,10 +19,7 @@ export default function ProjectCard({
 }: ProjectProps) {
   return (
     <article className="group overflow-hidden rounded-2xl border border-slate-800/80 bg-slate-900/40 transition-all hover:border-slate-700 hover:bg-slate-900/70 flex flex-col justify-between">
-      
-      {/* Top Section: Optional Thumbnail + Info */}
       <div>
-        {/* Project Thumbnail / Preview */}
         <div className="relative aspect-video w-full overflow-hidden border-b border-slate-800/80 bg-slate-950">
           {imageUrl ? (
             <img
@@ -31,14 +28,12 @@ export default function ProjectCard({
               className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
           ) : (
-            // Clean Fallback pattern when no screenshot is added yet
             <div className="flex h-full w-full items-center justify-center bg-slate-950/60 font-mono text-xs text-slate-600">
               [Preview Placeholder]
             </div>
           )}
         </div>
 
-        {/* Title & Description */}
         <div className="p-6 space-y-2">
           <h3 className="text-base font-semibold text-white group-hover:text-emerald-400 transition-colors">
             {title}
@@ -49,10 +44,7 @@ export default function ProjectCard({
         </div>
       </div>
 
-      {/* Bottom Section: Tech Stack & Action Links */}
       <div className="p-6 pt-0 space-y-4">
-        
-        {/* Tech Stack Badges */}
         <div className="flex flex-wrap gap-2 font-mono text-[11px] pt-3 border-t border-slate-800/60">
           {techStack.map((tech) => (
             <span
@@ -64,7 +56,6 @@ export default function ProjectCard({
           ))}
         </div>
 
-        {/* Links */}
         <div className="flex items-center gap-4 font-mono text-xs">
           {githubUrl && (
             <a

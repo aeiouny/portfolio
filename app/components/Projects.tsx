@@ -3,42 +3,29 @@ import ProjectCard from './ProjectCard'
 const projects = [
     {
         title: 'SeekPoint',
-        description: 'Media Processing Pipeline',
+        description: 'Asynchronous video processing pipeline that ingests media, generates audio waveforms via FFmpeg, and monitors task queues with Redis Streams.',
         techStack: ['FastAPI', 'Redis Streams', 'FFmpeg', 'AWS S3', 'Prometheus', 'Grafana'],
         githubUrl: 'https://github.com/aeiouny/seekpoint',
         liveUrl: ''
     },
     {
-        title: 'Calibre',
-        description: 'Collaborative Workspace',
-        techStack: ['TypeScript', 'Node.js', 'WebSockets', 'Next.js', 'Redis Pub/Sub', 'PostgreSQL'],
-        githubUrl: 'https://github.com/aeiouny/calibre',
+        title: 'Template 1',
+        description: '',
+        techStack: [],
+        githubUrl: '',
     },
     {
-        title: 'Allot',
-        description: 'Campus Resource Scheduling Platform',
-        techStack: ['Spring Boot, PostgreSQL, Redis, Next.js, Docker'],
+        title: 'Template 2',
+        description: '',
+        techStack: [],
         githubUrl: '',
     },
     {
         title: 'Campus Marketplace',
-        description: 'E-Commerce Platform for Students',
+        description: 'Peer-to-peer student marketplace featuring listing content moderation and a chat bot powered by OpenAI API and AWS S3 file hosting.',
         techStack: ['Spring Boot', 'PostgreSQL', 'Next.js', 'AWS S3', 'JWT', 'OpenAI API'],
         githubUrl: '',
-    },
-    {
-        title: 'Fren2Meet',
-        description: 'Collaborative Group Scheduling Platform',
-        techStack: ['React', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
-        githubUrl: '',
-    },
-    {
-        title: 'EmToCha',
-        description: '',
-        techStack: [],
-        githubUrl: 'https://github.com/aeiouny/EMTOCHA',
     }
-    
 ];
 
 export default function Projects() {
